@@ -4,24 +4,13 @@
 }
 
 body {
-  background-color: #fcf9fc;
+  background-color: #f6f6f6;
 }
 
 nav {
   background-color: #e9d638;
   border-bottom: 10px solid #e42733;
   margin-bottom: 30px;
-}
-
-ul {
-  list-style-type: none;
-  color: #fcf9fc;
-}
-.eat-bg {
-  background: #777a83;
-  border: 10px solid #b04851;
-  border-radius: 5px;
-  padding: 15px 15px 15px 5px;
 }
 
 .title {
@@ -31,14 +20,39 @@ ul {
   margin: auto;
 }
 
-h3 {
-  font-family: "Amatic SC", cursive;
-  font-size: 40px;
-  color: #fcf9fc;
-}
-
 .wrap {
   width: 80%;
+}
+
+ul {
+  list-style-type: none;
+  color: #f6f6f6;
+}
+
+.header {
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  color: #f6f6f6;
+  border-bottom: 3px dashed #f6f6f6;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.eat-bg {
+  background: #777a83;
+  border: 10px solid #b04851;
+  border-radius: 5px;
+  padding: 15px 15px 15px 5px;
+}
+
+img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.burg-row {
+  margin-bottom: 30px;
 }
 
 li,
@@ -52,7 +66,7 @@ button {
   font-size: 20px;
   border-radius: 25px;
   background-color: #4378ba;
-  color: white;
+  color: #f6f6f6;
   border: 0px;
 }
 
@@ -60,20 +74,10 @@ button {
   font-size: 30px;
 }
 
-.burg-row {
-  margin-bottom: 30px;
-}
-
 .create-form {
   border-radius: 25px;
   background-color: #afd060;
   padding: 20px;
   border: 5px solid #feef65;
-}
-
-.header {
-  border-bottom: 3px dashed #fcf9fc;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10%;
 }
