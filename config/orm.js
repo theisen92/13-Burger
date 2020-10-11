@@ -39,9 +39,6 @@ var orm = {
     var queryString = `INSERT INTO ${table}(${cols.toString()}) VALUES (${printQuestionMarks(
       vals.length
     )});`;
-
-    console.log(queryString);
-
     connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
@@ -55,8 +52,6 @@ var orm = {
     var queryString = `UPDATE ${table} SET ${objToSql(
       objColVals
     )} WHERE ${condition};`;
-
-    console.log(queryString);
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;

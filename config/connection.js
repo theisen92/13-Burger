@@ -1,10 +1,11 @@
 var mysql = require("mysql");
+const userCred = require("./config");
 
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: "ice_admin",
-  password: "password",
+  user: userCred.user,
+  password: userCred.password,
   database: "burger_db",
 });
 
