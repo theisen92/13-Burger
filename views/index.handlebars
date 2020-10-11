@@ -1,32 +1,48 @@
-<h1>Eat-da-Burger</h1>
+<nav class="navbar">
+    <h1 class="title">Eat-da-Burger</h1>
+</nav>
 
-<h2>Burgers ready to eat!</h2>
+<div class="container-fluid wrap">
+    <div class="row burg-row">
+        <div class="col-lg text-center eat-bg">
 
-<ul>
-    {{#each burger}}
-    {{#unless devoured}}
-    {{> burger/burger-block devoured=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
+            <h3 class="header">Burgers ready to eat!</h3>
+            <ul>
+                {{#each burger}}
+                {{#unless devoured}}
+                {{> burger/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+            <img src="/assets/img/bob-burger-icon.png">
+        </div>
+        <div class="col-lg text-center eat-bg">
+            <h3 class="header">Burgers you've eatten!</h3>
 
-<h2>Burgers you've eatten!</h2>
-
-<ul>
-    {{#each burger}}
-    {{#if devoured}}
-    <li>{{burger_name}}</li>
-    {{/if}}
-    {{/each}}
-</ul>
-
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="burger">Name your burger you want to order up!:</label>
-        <br>
-        <textarea type="text" id="burger" name="burger_name"></textarea>
+            <ul>
+                {{#each burger}}
+                {{#if devoured}}
+                <li>{{id}}. {{burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
 
-    <button type="submit">Add burger</button>
-</form>
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label for="burger">Name your burger you want to order up!:</label>
+                    <br>
+                    <textarea class="col-11" type="text" id="burger" name="burger_name"></textarea>
+                </div>
+
+                <button class="add-burg" type="submit">Add burger</button>
+            </form>
+        </div>
+    </div>
+</div>
