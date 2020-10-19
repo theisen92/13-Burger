@@ -3,7 +3,7 @@ const userCred = require("./config");
 var connection;
 
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL)
+  connection = mysql.createConnection(process.env.JAWSDB_MAUVE_URL)
 } else {
   connection = mysql.createConnection({
     host: userCred.host,
