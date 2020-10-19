@@ -1,27 +1,27 @@
 {
-  "name": "13-Burger",
+  "name": "13-burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat da burger shows a list of burger optins to eat and is moved over to the eaten section. You can also add burgers to the \"ready to eat\" section to be eaten",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "express-handlebars": "^5.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theisen92/13-Burger.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/theisen92/13-Burger/issues"
   },
-  "homepage": "https://github.com/theisen92/13-Burger#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "mysql": "^2.18.1",
-    "node": "^12.18.3"
-  }
+  "homepage": "https://github.com/theisen92/13-Burger#readme"
 }
